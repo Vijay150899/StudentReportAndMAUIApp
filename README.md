@@ -1,26 +1,27 @@
-# Student Report API
+# Product MAUI App
 
-This is an ASP.NET Core Web API that generates student report cards based on a list of Student IDs.
+This is a .NET MAUI application that displays a list of products fetched from a public API. Users can view product details by selecting a product from the list.
 
 ## Features
-- Returns student details: Name, Class, Section, Academic Year
-- Returns exam-wise marks details: Subjects, Marks Obtained, Maximum Marks, Total, Percentage
+- Displays product list with image, title, and price.
+- Allows selection of a product to view detailed information.
+- Fetches product data from a public REST API.
+- Navigates to a detailed page for each product.
 
 ## Technologies
-- ASP.NET Core Web API
-- Entity Framework Core (In-Memory Database)
-- LINQ
+- .NET MAUI
+- MVVM Architecture
+- REST API Integration
+- C#
+- XAML
 
 ## How to Run
-1. Open the solution in Visual Studio.
-2. Run the API.
-3. Use Postman to call the endpoint:
-   - POST: `https://localhost:{port}/api/ReportCard/GetReportCards`
-   - Body (JSON): 
-     ```json
-     [1, 2]
-     ```
+1. Clone the repository.
+2. Open the solution in **Visual Studio 2022** or later.
+3. Set **MauiProductApp** as the startup project.
+4. Select target device: Android Emulator, Windows Machine, or any supported MAUI platform.
+5. Build and run the project.
 
-## Sample API Endpoint
-```http
-POST /api/ReportCard/GetReportCards
+## API Used
+- [Fake Store API](https://fakestoreapi.com/products)
+
